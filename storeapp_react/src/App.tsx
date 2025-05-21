@@ -1,9 +1,19 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout"
 
 function App() {
 
   return (
-    <p className='text-8xl'>Holaaa</p>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
