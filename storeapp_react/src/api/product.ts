@@ -1,7 +1,8 @@
+import type { Product } from "../interfaces/Product";
 import { axi } from "./useAxios";
 
 //lista de productos
-export const getListProduct = async (id: number) => {
-    const res = await axi.get(`product/list`)
-    return res.data
+export const getClients = async (): Promise<Product[]> => {
+    const response = await axi.get('/clients/list')
+    return response.data;
 }
