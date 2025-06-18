@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout"
+import ProductPage from "./pages/ProductPage"
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout/>}>
+        <Route path='/' element={<Layout />}>
+          <Route path='/product' element={<ProductPage />}/>
 
         </Route>
       </Routes>
@@ -17,4 +19,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
