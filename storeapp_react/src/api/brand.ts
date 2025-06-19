@@ -11,3 +11,8 @@ export const getIdBrands = async (id: number): Promise<Brand> => {
     const response = await axi.get(`/brand/${id}`);
     return response.data;
 }
+
+export const createBrand = async (brandData: any) => {
+    const response = await axi.post(`/brand/create`, brandData);
+    return response.data;
+}
