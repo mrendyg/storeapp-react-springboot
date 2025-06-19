@@ -8,3 +8,9 @@ export interface Product {
         name: string;
     };
 }
+
+export interface Brand {
+    id: number;
+    name: string;
+}
+
